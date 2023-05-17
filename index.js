@@ -4,4 +4,5 @@ const randomIndex = Math.floor(Math.random() * colors.length);
 const randomColor = colors[randomIndex];
 const randomImage = image[randomIndex];
 document.body.style.backgroundColor = randomColor;
+document.querySelector('meta[name="theme-color"]').setAttribute("content", randomColor);
 document.getElementById('logo').src = randomImage;
